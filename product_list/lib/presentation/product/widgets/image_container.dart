@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:product_list/presentation/product/product_screen.dart';
 
 class ImageContainer extends StatelessWidget {
   const ImageContainer({
@@ -13,20 +12,23 @@ class ImageContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green,
+      color: Colors.green.shade400,
       padding: const EdgeInsets.all(16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             title,
-            style: StyleText.title.copyWith(color: Colors.white),
+            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                ),
           ),
           Expanded(
             child: Image.asset(
               image,
-              width: 150,
-              height: 150,
+              width: 130,
+              height: 130,
               fit: BoxFit.cover,
             ),
           ),

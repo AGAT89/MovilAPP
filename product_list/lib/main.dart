@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:product_list/presentation/product/navigator_screen.dart';
+import 'package:product_list/presentation/navigator_button/navigator_screen.dart';
 
 void main() {
   runApp(const MyApp());

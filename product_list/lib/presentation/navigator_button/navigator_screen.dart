@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:product_list/presentation/product/product_screen.dart';
+import 'package:product_list/presentation/product/view/product_screen.dart';
 
 class NavigatorScreen extends StatelessWidget {
   const NavigatorScreen({super.key});
