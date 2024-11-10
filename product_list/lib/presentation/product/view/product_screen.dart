@@ -8,16 +8,11 @@ import '../widgets/image_container.dart';
 import '../widgets/product_list.dart';
 import 'product_vm.dart';
 
-class ProductScreen extends StatefulWidget {
+class ProductScreen extends StatelessWidget {
   const ProductScreen({
     super.key,
   });
 
-  @override
-  State<ProductScreen> createState() => _ProductScreenState();
-}
-
-class _ProductScreenState extends State<ProductScreen> {
   @override
   Widget build(BuildContext context) =>
       ChangeNotifierProvider<ProductViewModel>(

@@ -27,6 +27,18 @@ class Product {
           ? (json['price'] as int).toDouble()
           : json['price'],
       stock: json['stock'],
+      quantity: json['quantity'] ?? 0,
     );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'slug': slug,
+      'name': name,
+      'description': description,
+      'price': price,
+      'stock': stock,
+      'quantity': quantity,
+    };
   }
 }
